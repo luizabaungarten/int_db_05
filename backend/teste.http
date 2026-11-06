@@ -1,0 +1,60 @@
+### - Testes da API - Com REST Client
+
+### - Teste se o servidor está funcionando:
+GET http://localhost:3000/
+Content-Type: application/json
+
+### - Teste para cadastrar o Hóspede 1:
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Luiza",
+    "cpf:": "123.456.789-00",
+    "email": "luiza@gmail.com",
+    "telefone": "(12) 3 4567-8900"
+}
+
+### - Teste para cadastrar o Hóspede 2:
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Gabriela",
+    "cpf:": "123.456.789-01",
+    "email": "labriela@gmail.com",
+    "telefone": "(12) 3 4567-8901"
+}
+
+### - Teste para cadastrar o Hóspede 3:
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Luis",
+    "cpf:": "123.456.789-02",
+    "email": "luis@gmail.com",
+    "telefone": "(12) 3 4567-8902"
+}
+
+### - Teste para cadastrar o Hóspede 4:
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Ana",
+    "cpf:": "123.456.789-03",
+    "email": "ana@gmail.com",
+    "telefone": "(12) 3 4567-8903"
+}
+
+### - Teste para cadastrar o Hóspede 5:
+POST http://localhost:3000/hospede
+Content-Type: application/json
+
+{
+    "nome": "Emerson",
+    "cpf:": "123.456.789-04",
+    "email": "emerson@gmail.com",
+    "telefone": "(12) 3 4567-8904"
+}

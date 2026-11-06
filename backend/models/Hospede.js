@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize')
 const db = require('../db/conn')
 
 const Hospede = db.define('usuario',{
-    id: {
+    codHospede: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
@@ -11,16 +11,17 @@ const Hospede = db.define('usuario',{
         type: DataTypes.STRING(50),
         allowNull: false
     },
-
-    sobrenome: {
-        type: DataTypes.STRING(100),
-        allowNull: false
-    },
-
+    
     cpf: {
         type: DataTypes.STRING(11),
         allowNull: false,
         unique: true
+    },
+
+    email: {
+        type: DataTypes.STRING(100),
+        unique: true,
+        allowNull: false
     },
 
     telefone: {

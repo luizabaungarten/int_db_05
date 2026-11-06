@@ -2,13 +2,13 @@ const Hospede = require('./Hospede')
 const Quarto = require('./Quarto')
 
 Hospede.hasMany(Quarto, {
-    foreignKey: 'id',
+    foreignKey: 'idHospede',
     as: 'quartoHospede',
     onDelete: 'CASCADE'
 })
 
 Quarto.belongsTo(Hospede, {
-    foreignKey: 'id',
+    foreignKey: 'idHospede',
     as: 'hospedeQuarto',
     allowNule: 'false'
 })

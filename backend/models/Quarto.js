@@ -11,9 +11,18 @@ const Quarto = db.define('produto', {
         allowNull: false
     },
 
-     valorDiaria: {
+    valorDiaria: {
         type: DataTypes.DECIMAL(10,2),
         allowNull: false
+    },
+
+    idHospede:{
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        references: {
+            key:'codHospede',
+            model: 'hospedes'
+        }
     }
 
     },{
