@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/quarto_atualizar.js"></script>
+    <title>Atualizar Quarto</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+
+            <span class="titulo_menu">Hóspedes</span>&emsp;
+            <a href="./hospede_cadastrar.html">Cadastrar</a>
+            <a href="./hospede_listar.html">Listar</a>
+            <a href="./hospede_consultar.html">Consultar</a>
+            <a href="./hospede_atualizar.html">Atualizar</a>
+            <a href="./hospede_apagar.html">Apagar</a>
+            <br><br><hr><br>
+
+            <span class="titulo_menu">Quartos</span>&emsp;
+            <a href="./quarto_cadastrar.html">Cadastrar</a>
+            <a href="./quarto_listar.html">Listar</a>
+            <a href="./quarto_consultar.html">Consultar</a>
+            <a href="./quarto_atualizar.html">Atualizar</a>
+            <a href="./quarto_apagar.html">Apagar</a>
+            <br><br><hr><br>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Atualizar Novo Quarto</h1>
+        <br><br>
+        <form>
+            <label for="numeroQuarto">Novo Nome do Quarto</label><br>
+            <input type="number" id="numeroQuarto" placeholder="Ex: 123" required><br><br>
+            
+            <label for="diasHospedagem">Novo Dias de hospedagem</label><br>
+            <input type="number" id="diasHospedagem" placeholder="Ex: 1" required><br><br>
+            
+            <label for="valorDiaria">Novo Valor da diária (R$)</label><br>
+            <input type="number" step="0.01" id="valorDiaria" required><br><br>
+            
+            <label for="idHospede">Novo Código do hóspede</label><br>
+            <input type="number" id="idHospede" required><br><br>
+        </form>
+
+        <div>
+            <button id="btn_atualizar">Atualizar</button><br><br>
+        </div>
+
+    </main>
+
+    <div id="resposta" class="resposta"></div>
+    
+    <footer>
+        <small>
+            by Luh &copy;
+        </small>
+    </footer>
+</body>
+</html>

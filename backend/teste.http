@@ -54,7 +54,105 @@ Content-Type: application/json
 
 {
     "nome": "Emerson",
-    "cpf:": "123.456.789-04",
+    "cpf": "123.456.789-04",
     "email": "emerson@gmail.com",
     "telefone": "(12) 3 4567-8904"
+}
+
+### - Teste para consultar o Hóspede 2:
+POST http://localhost:3000/hospede/2
+Content-Type: application/json
+
+### - Teste para listar todos os hóspedes:
+GET http://localhost:3000/hospedes
+Content-Type: application/json
+
+### - Teste para excluir o Hóspede 4:
+DELETE  http://localhost:3000/hospede/4
+Content-Type: application/json
+
+{
+    "nome": "Aninha",
+    "cpf": "123.456.789.11",
+    "email": "aninha@gmail.com"
+}
+
+##################################################
+
+### - Teste para cadastrar o Quarto 1
+POST http://localhost:3000/quarto/1
+Content-Type: application/json
+
+{
+    "idHospede": 1,
+    "numeroQuarto": 15,
+    "diasHospedagem": 5,
+    "valorDiaria": 195.35
+}
+
+### - Teste para cadastrar o Quarto 2
+POST http://localhost:3000/quarto/2
+Content-Type: application/json
+
+{
+    "idHospede": 2,
+    "numeroQuarto": 7,
+    "diasHospedagem": 4,
+    "valorDiaria": 147.44
+}
+
+### - Teste para cadastrar o Quarto 3
+POST http://localhost:3000/quarto/3
+Content-Type: application/json
+
+{
+    "idHospede": 3,
+    "numeroQuarto": 2,
+    "diasHospedagem": 7,
+    "valorDiaria": 128.34
+}
+
+### - Teste para cadastrar o Quarto 4
+POST http://localhost:3000/quarto/4
+Content-Type: application/json
+
+{
+    "idHospede": 4,
+    "numeroQuarto": 6,
+    "diasHospedagem": 2,
+    "valorDiaria": 188.27
+}
+
+### - Teste para cadastrar o Quarto 5
+POST http://localhost:3000/quarto/5
+Content-Type: application/json
+
+{
+    "idHospede": 5,
+    "numeroQuarto": 9,
+    "diasHospedagem": 2,
+    "valorDiaria": 188.27
+}
+
+### - Teste para Consultar o Quarto 2
+GET http://localhost:3000/quarto/2
+Content-Type: application/json
+
+### - Teste para Listar os Quartos
+GET http://localhost:3000/quartos
+Content-Type: application/json
+
+### - Teste para Excluir o Quarto 4
+DELETE http://localhost:3000/quarto/4
+Content-Type: application/json
+
+### - Teste para Atualizar o Quarto 3
+PUT http://localhost:3000/quarto/3
+Content-Type: application/json
+
+{
+    "idHospede": 3,
+    "numero": 11,
+    "diasHospedagem": 5,
+    "valorDiaria": 177.77
 }
